@@ -21,6 +21,8 @@
 const PrivateKeyProvider = require("@truffle/hdwallet-provider");
 const privateKey = "0xae6ae8e5ccbfb04590405997ee2d52d2b330726137b875053c36d94e974d162f";
 const privateKeyProvider = new PrivateKeyProvider(privateKey, "http://localhost:8545");
+const siachainKey = "0xdcf26c4edf5bd5f600d46973245c509a956c135f2e98a3aa1094b9c189b574a1";
+const siachainKeyProvider = new PrivateKeyProvider(siachainKey, "https://siachainstudio.poc-siachain.sia.eu/SIAchain/TestA/53188d75109d48b2b571526dfe970b9a");
 
 // const HDWalletProvider = require('@truffle/hdwallet-provider');
 // const infuraKey = "fj4jll3k.....";
@@ -54,7 +56,11 @@ module.exports = {
      },
      besu: {
 	provider: privateKeyProvider,
-        network_id: "*",
+        network_id: "2018",
+     },
+     siachain: {
+	provider: siachainKeyProvider,
+        network_id: "1111",
      },
     // Another network with more advanced options...
     // advanced: {
@@ -90,7 +96,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-       version: "0.6.1",    // Fetch exact version from solc-bin (default: truffle's version)
+       version: "0.5.0",    // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       // settings: {          // See the solidity docs for advice about optimization and evmVersion
       //  optimizer: {
