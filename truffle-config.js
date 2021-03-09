@@ -20,7 +20,7 @@
 
 const PrivateKeyProvider = require("@truffle/hdwallet-provider");
 const privateKey = "0xae6ae8e5ccbfb04590405997ee2d52d2b330726137b875053c36d94e974d162f";
-const privateKeyProvider = new PrivateKeyProvider(privateKey, "http://localhost:8545");
+const privateKeyProvider = new PrivateKeyProvider(privateKey, "http://ethbb.sede.i-node.it:8545");
 
 // const HDWalletProvider = require('@truffle/hdwallet-provider');
 // const infuraKey = "fj4jll3k.....";
@@ -54,7 +54,7 @@ module.exports = {
      },
      besu: {
 	provider: privateKeyProvider,
-        network_id: "*",
+        network_id: "2018",
      },
     // Another network with more advanced options...
     // advanced: {
