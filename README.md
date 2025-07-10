@@ -1,0 +1,4 @@
+This project has been created as a compqanion part for a bigger POC to show the potential of a Blockchain implementation. Final POC, which was intended to show the functionality of the equivalend of Amazon Lockers, would have had an automatic management of all the return of a good flow for any size of ecommerce.
+This part is the escrow contract that would have been used as basis to manage blockchain interaction with who is managing the return functionality and the ecommerce that, in this case, was magento (quite common solution).
+
+The idea behind this approach is that once someone gets a good from a seller, if good is not ok for any reason, he can pack it back, bring it to the locker, drop it in the locker and it will be brought back to vendor, that then unlocks the money advising the locker manager that goods are ok.
